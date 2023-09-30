@@ -13,6 +13,11 @@ public class Student {
         this.group = group;
     }
 
+    @Override
+    public String toString() {
+        return surname + " " + name;
+    }
+
     public String getName() {
         return name;
     }
