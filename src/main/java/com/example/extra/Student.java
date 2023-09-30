@@ -1,5 +1,7 @@
 package com.example.extra;
 
+import java.util.Objects;
+
 public class Student {
     String name;
     String surname;
@@ -11,6 +13,17 @@ public class Student {
         this.surname = surname;
         this.sex = sex;
         this.group = group;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        Student student = (Student) o;
+        return sex == student.sex && this.name.equals(student.name) && this.surname.equals(student.surname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(group);
     }
 
     @Override

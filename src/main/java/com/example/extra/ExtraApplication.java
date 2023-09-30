@@ -15,7 +15,7 @@ public class ExtraApplication {
 
         ListOperations listOperations = new ListOperations();
         ArrayList<ExtendedStudent> allStudents = listOperations.create();
-        listOperations.printBySexAndGroup(allStudents, 'm', "3a");
+        listOperations.printBySexAndGroup(allStudents, 'm', "4b");
 
         MapOperations mapOperations  = new MapOperations();
         Map<String, ExtendedStudent> studentsByID = mapOperations.create(allStudents);
@@ -25,6 +25,11 @@ public class ExtraApplication {
         System.out.println(studentsByGroups + "\n");
 
         mapOperations.calculations(studentsByGroups);
+
+        ExtendedStudent boss = new ExtendedStudent("Yuria", "Harudera", 'f', "5a", "boss", "pistol", 11);
+        studentsByID.put("099213f002", boss);
+        System.out.println("\nGet by key test: " + studentsByID.get("106213m001"));
+        System.out.println("Contains by value: " + studentsByID.containsValue(boss));
     }
 
 }
