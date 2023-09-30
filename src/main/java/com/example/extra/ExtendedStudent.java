@@ -1,6 +1,6 @@
 package com.example.extra;
 
-public class ExtendedStudent extends Student{
+public class ExtendedStudent extends Student {
     String speciality;
     String mainWeapon;
     int kills;

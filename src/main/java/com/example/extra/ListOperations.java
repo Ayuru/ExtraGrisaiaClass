@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class ListOperations {
 
 
-
     public ArrayList<ExtendedStudent> create() {
 
         ArrayList<ExtendedStudent> students = new ArrayList<>();
@@ -31,10 +30,10 @@ public class ListOperations {
         int i = 0;
         System.out.println("List of filtered students:");
 
-        for (ExtendedStudent student: students) {
-            if(student.getSex() == sex && student.getGroup().equals(group)) {
-            System.out.println(student.toString());
-            i++;
+        for (ExtendedStudent student : students) {
+            if (student.getSex() == sex && student.getGroup().equals(group)) {
+                System.out.println(student.toString());
+                i++;
             }
 
         }

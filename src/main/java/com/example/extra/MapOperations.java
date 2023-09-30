@@ -15,7 +15,7 @@ public class MapOperations {
         for (ExtendedStudent student : students) {
 
             mapOfStudents.put(i + "213" + student.getSex() + "001", student);
-                    i++;
+            i++;
 
         }
 
@@ -59,7 +59,7 @@ public class MapOperations {
 
         }
 
-        System.out.println("Average: " + totalNumber/studentsByGroups.size());
+        System.out.println("Average: " + totalNumber / studentsByGroups.size());
 
     }
 }

@@ -18,7 +18,7 @@ public class Student {
     @Override
     public boolean equals(Object o) {
         Student student = (Student) o;
-        return sex == student.sex && this.name.equals(student.name) && this.surname.equals(student.surname);
+        return this.group.equals(student.group) && this.name.equals(student.name) && this.surname.equals(student.surname);
     }
 
     @Override

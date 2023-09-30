@@ -17,7 +17,7 @@ public class ExtraApplication {
         ArrayList<ExtendedStudent> allStudents = listOperations.create();
         listOperations.printBySexAndGroup(allStudents, 'm', "4b");
 
-        MapOperations mapOperations  = new MapOperations();
+        MapOperations mapOperations = new MapOperations();
         Map<String, ExtendedStudent> studentsByID = mapOperations.create(allStudents);
         Map<String, ArrayList<ExtendedStudent>> studentsByGroups = mapOperations.createByGroups(allStudents);
 
